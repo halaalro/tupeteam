@@ -1,6 +1,8 @@
 <?php
 use \yii\helpers\Url;
 
+
+
 /** @var yii\web\View $this */
 /** @var  \common\models\Video $lateestVideo */
 /** @var   $numberOfViews integer */
@@ -17,11 +19,11 @@ $this->title = 'My Yii Application';
 
 
 
-<div class="media mb-2 mt-4 d-flex flex-wrap">
+<div class="media mb-2 mt-4 d-flex ">
     <?php if($lateestVideo){?>
           <div class="card m-2" style="width: 14rem;">
-              <div class="embed-responsive  embed-responsive-16by9  mr-2" style="width:140px">
-             <video class="object-fit-sm-contain border rounded"
+              <div class="embed-responsive  embed-responsive-16by9 " >
+             <video class="object-fit-lg-contain border rounded"style="width:14rem"
               poster="<?php echo $lateestVideo->getThumbnailLink()?>"
                src="<?php echo $lateestVideo->getVideoLink()?>"
                >
