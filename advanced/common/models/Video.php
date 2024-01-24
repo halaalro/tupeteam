@@ -169,10 +169,10 @@ class Video extends \yii\db\ActiveRecord
                
     }
     public  function getVideoLink(){
-        return yii::$app->params['frontendUrl'] .'storage/videos/'.$this->id.'.mp4';
+        return 'http://localhost/tupeteam/advanced/frontend/web/storage/videos/'.$this->id.'.mp4';
 
     } public  function getThumbnailLink(){
-        return yii::$app->params['frontendUrl'] .'storage/thumb/'.$this->id.'.jpg';
+        return 'http://localhost/tupeteam/advanced/frontend/web/storage/thumb/'.$this->id.'.jpg';
 
     }
     
